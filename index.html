@@ -30,14 +30,14 @@
                     <p class="bg-[#2F2941] px-6 pb-4 rounded-b-xl text-white">Don't watch keyboar while playing...</p>
                  </div>
                  <div class="flex justify-center items-center h-full">
-                  <p id="current-alphabe" class="text-black text-9xl font-bold uppercase">Y</p>
+                  <p id="current-alphabet" class="text-black text-9xl font-bold uppercase">Y</p>
                 </div> 
                  </div>    
                 <!-- keyboard start  -->
                 <div>
        <div class="flex justify-center gap-1 my-1 w-full">
-                 <kbd class="kbd">q</kbd>
-        <kbd class="kbd">w</kbd>
+             <kbd id="q" class="kbd">q</kbd>
+             <kbd id="w" class="kbd">w</kbd>
              <kbd id="e" class="kbd">e</kbd>
              <kbd id="r" class="kbd">r</kbd>
              <kbd id="t" class="kbd">t</kbd>
@@ -72,15 +72,17 @@
                 <!-- keyboard end  -->
                 <!-- life score  -->
                 <div class="flex justify-between w-3/4">
-                  <button class="btn rounded-full bg-purple-300 text-white px-4">
+                 <!-- display life  -->
+                  <button class="btn rounded-full bg-purple-500 text-white px-4">
                     life
                    <img src="images/heart (1).svg" alt="">
-                    <span>1</span>
+                    <span id="current-life">5</span>
                   </button>
+                  <!-- display score  -->
                   <button class="btn rounded-full bg-purple-700 text-white px-4">
                     score
                    <img src="images/dolar.svg" alt="">
-                    <span>1</span>
+                    <span id="current-score">0</span>
                   </button>
                 </div>
             </div>
